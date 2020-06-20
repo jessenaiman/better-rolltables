@@ -3,6 +3,7 @@ import { LootBuilder } from './loot/loot-builder.js'
 import { LootChatCard } from './loot/loot-chat-card.js';
 import { StoryBuilder } from './story/story-builder.js';
 import { StoryChatCard } from './story/story-chat-card.js';
+import { StoryJournalCard }
 import { BRTBuilder } from './core/brt-builder.js';
 
 export class BetterTables {
@@ -30,6 +31,16 @@ export class BetterTables {
         const storyChat = new StoryChatCard(tableEntity);
         storyChat.createChatCard(storyHtml);
         storyChat.createChatCard(storyGMHtml, { gmOnly: true });
+    }
+
+    async generateJournalStory(tableEntity) {
+        const storyBuilder = new StoryBuilder(tableEntity);
+        await storyBuilder.drawStory();
+        const storyHtml = storyBuilder.generatedStory();
+        const storyGMHtml = storyBuilder.generatedStoryGM();
+        const storyJournal = new StoryJournalCard(tableEntity);
+        storyJournal.createJournalCard(storyHtml);
+        storyJournal.createJournalCard(storyGMHtml, { gmOnly: true });
     }
 
     async betterTableRoll(tableEntity) {
