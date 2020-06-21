@@ -13,18 +13,9 @@ export class StoryJournalCard {
     createJournalCard(story, options = {}) {
         if (!story) return;
 
-        let storyData = {
-            flavor: this._tableEntity.data.name,
-            sound: "sounds/dice.wav",
-            name: game.user._id,
-            content: story
-        }
-        if (options.gmOnly) {
-            storyData.whisper = [game.users.find(u => u.isGM).id];
-        } else {
-            addRollModeToChatData(storyData);
-        }
+        let data = {name: "test journal"};
+        setProperty(data, "content", storyHtml);
 
-        JournalEntry.create(storyData)
+        JournalEntry.create(data);
     }
 }
