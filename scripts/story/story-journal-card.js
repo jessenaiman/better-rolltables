@@ -20,19 +20,11 @@ export class StoryJournalCard {
             content: story
         }
         if (options.gmOnly) {
-            chatData.whisper = [game.users.find(u => u.isGM).id];
+            storyData.whisper = [game.users.find(u => u.isGM).id];
         } else {
-            addRollModeToChatData(chatData);
+            addRollModeToChatData(storyData);
         }
 
         JournalEntry.create(storyData)
-          
-        //   Folder.create(
-        //     {
-        //       name: "",
-        //       type: "JournalEntry",
-        //       parent: null
-        //     }
-        //   )
     }
 }
