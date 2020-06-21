@@ -14,7 +14,7 @@ export class StoryJournalCard {
         if (!story) return;
 
         let data = {name: "test journal"};
-        setProperty(data, "content", storyHtml);
+        setProperty(data, "content", story);
 
         JournalEntry.create(data);
     }
