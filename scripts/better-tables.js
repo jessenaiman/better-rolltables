@@ -32,6 +32,15 @@ export class BetterTables {
         storyChat.createChatCard(storyGMHtml, { gmOnly: true });
     }
 
+    async generateJournalStory(tableEntity) {
+        const storyBuilder = new StoryBuilder(tableEntity);
+        await storyBuilder.drawStory();
+        const storyHtml = storyBuilder.generatedStory();
+        let data = {name: "test journal"};
+        setProperty(data, "content", storyHtml);
+        JournalEntry.create(data);
+    }
+
     async betterTableRoll(tableEntity) {
         const brtBuilder = new BRTBuilder(tableEntity);
         await brtBuilder.betterRoll();
