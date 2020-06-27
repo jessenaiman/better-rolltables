@@ -38,9 +38,7 @@ export class BetterTables {
         await storyBuilder.drawStory();
         const storyHtml = storyBuilder.generatedStory();
         const storyJournal = new StoryJournalCard(tableEntity);
-        let data = {name: "test journal"};
-        setProperty(data, "content", storyHtml);
-        JournalEntry.create(data);
+        storyJournal.createJournalCard(storyHtml);
     }
 
     async betterTableRoll(tableEntity) {
