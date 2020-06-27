@@ -3,7 +3,7 @@ import { LootBuilder } from './loot/loot-builder.js'
 import { LootChatCard } from './loot/loot-chat-card.js';
 import { StoryBuilder } from './story/story-builder.js';
 import { StoryChatCard } from './story/story-chat-card.js';
-import { StoryJournalCard } from './story/story-journal-card';
+import { StoryJournalCard } from './story/story-journal-card.js';
 import { BRTBuilder } from './core/brt-builder.js';
 
 export class BetterTables {
