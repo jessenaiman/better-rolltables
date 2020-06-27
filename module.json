@@ -46,6 +46,7 @@
         }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "url": "https://github.com/jessenaiman/better-rolltables",
     "manifest": "https://raw.githubusercontent.com/jessenaiman/better-rolltables/master/module.json",
     "download": "https://github.com/jessenaiman/better-rolltables/archive/master.zip"
@@ -54,4 +55,9 @@
     "manifest": "https://raw.githubusercontent.com/ultrakorne/better-rolltables/master/module.json",
     "download": "https://github.com/ultrakorne/better-rolltables/releases/download/v1.3.0/better-rolltables.zip"
 >>>>>>> 2f8ac44ae3e84d0b609472527f2b839824804aa1
+=======
+    "url": "https://github.com/jessenaiman/better-rolltables",
+    "manifest": "https://raw.githubusercontent.com/jessenaiman/better-rolltables/master/module.json",
+    "download": "https://github.com/jessenaiman/better-rolltables/archive/master.zip"
+>>>>>>> 14c63c46f877d86d345158e337e32eee535e60e5
 }
