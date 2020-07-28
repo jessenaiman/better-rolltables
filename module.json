@@ -55,13 +55,7 @@
       "path": "lang/es-ES.json"
     }
   ],
-<<<<<<< HEAD
   "url": "https://github.com/jessenaiman/better-rolltables",
   "manifest": "https://raw.githubusercontent.com/jessenaiman/better-rolltables/master/module.json",
-  "download": "https://github.com/jessenaiman/better-rolltables/archive/master.zip"
-=======
-  "url": "https://github.com/ultrakorne/better-rolltables",
-  "manifest": "https://raw.githubusercontent.com/ultrakorne/better-rolltables/master/module.json",
-  "download": "https://github.com/ultrakorne/better-rolltables/releases/download/v1.5.0/better-rolltables.zip"
->>>>>>> 37fa7050d48649273db68defeb64b50a439b611c
+  "download": "https://github.com/ultrakorne/jessenaiman/releases/download/v1.5.0/better-rolltables.zip"
 }
