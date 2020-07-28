@@ -10,7 +10,7 @@ export class StoryJournalCard {
      * @param {string} story the html string of the story to display in chat
      * @param {dictionary} options set of options, if gmOnly = true then the card will be set to shown only to GM regardless of the chat preferences
      */
-    createJournalCard(story) {
+    createJournalCard(story, options = {}) {
         if (!story) return;
 
         let data = {name: "NPC Description"};
